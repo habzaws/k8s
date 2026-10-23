@@ -8,6 +8,12 @@ spec:
   minReadySeconds: 1
   replicas: 3
   selector: 
+    matchExpressions:
+      - key: activity
+        operators: in
+        values: 
+         - exercise
+         - exercise2
   template: 
     metadata:
       labels:
