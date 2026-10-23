@@ -10,7 +10,7 @@ spec:
   selector: 
     matchExpressions:
       - key: activity
-        operators: In 
+        operator: In 
         values: 
          - exercise
          - exercise2
